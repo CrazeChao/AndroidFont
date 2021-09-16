@@ -1,12 +1,12 @@
 package com.android.font
 
 import android.widget.TextView
-import com.style.font.TextFontCompat
-import com.style.font.TextFontStyle
-import com.style.font.TextFontWeightStyle
-import com.style.font.setTypeface
-import com.style.font.strategy.Language
-import com.style.font.strategy.TextFontStrategy
+import com.style.fontx.TextFontCompat
+import com.style.fontx.style.TextFontStyle
+import com.style.fontx.style.TextFontWeightStyle
+import com.style.fontx.setTypeface
+import com.style.fontx.strategy.Language
+import com.style.fontx.strategy.TextFontStrategy
 
 /**
  * Created by lizhichao on 2021/9/13
@@ -28,7 +28,8 @@ internal class ReadMine {
          * */
         TextFontCompat.applyTypefaceStrategy(textView, object: TextFontStrategy {
             override fun applyTypeface(textView: TextView?) {
-                TextFontCompat.applyTypeface(textView,TextFontStyle.AlibabaPuHuiTiBold)
+                TextFontCompat.applyTypeface(textView,
+                    TextFontStyle.AlibabaPuHuiTiBold)
             }
 
             override fun filter(language: Language?): Boolean {
@@ -47,7 +48,7 @@ internal class ReadMine {
          * */
         textView.setTypeface(TextFontStyle.AlibabaPuHuiTiBold)
         textView.setTypeface(TextFontWeightStyle.Black)
-        textView.setTypeface(object:TextFontStrategy{
+        textView.setTypeface(object: TextFontStrategy {
             override fun applyTypeface(textView: TextView?) {
                 TextFontStyle.AlibabaPuHuiTiBold.applyTypeface(textView)
 

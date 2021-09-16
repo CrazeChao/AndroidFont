@@ -17,15 +17,16 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-    <TextView
+    <com.style.fontx.view.TextFontView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="AlibabaPuHuiTiHeavy"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
          android:textSize="15sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textFontWeight="1000"
         />
 
     <TextView
@@ -92,6 +93,7 @@
          android:textSize="15sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
         />
 
     <TextView

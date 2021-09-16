@@ -1,10 +1,12 @@
-package com.style.font.strategy.impl;
+package com.style.fontx.strategy.impl;
 import android.widget.TextView;
-import com.style.font.TextFontCompat;
-import com.style.font.TextFontStyle;
-import com.style.font.strategy.Language;
-import com.style.font.strategy.TextFontStrategy;
+
+import com.style.fontx.strategy.Language;
+import com.style.fontx.strategy.TextFontStrategy;
+import com.style.fontx.style.TextFontStyle;
+
 import java.util.HashMap;
+
 /**
  * Created by lizhichao on 2021/9/13
  */
@@ -13,6 +15,10 @@ public class TextFontStrategySet implements TextFontStrategy {
     public TextFontStrategySet put(Language language,TextFontStyle textFontStyle){
         fontStrategyList.put(language,textFontStyle);
         return this;
+    }
+
+    public HashMap<Language, TextFontStyle> getFontStrategyList() {
+        return fontStrategyList;
     }
 
     Language currentLau;

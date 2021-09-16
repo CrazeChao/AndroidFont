@@ -1,6 +1,5 @@
-package com.style.font.strategy;
+package com.style.fontx.strategy;
 import android.widget.TextView;
-import com.style.font.TextFontStyle;
 
 /**
  * Created by lizhichao on 2021/9/13

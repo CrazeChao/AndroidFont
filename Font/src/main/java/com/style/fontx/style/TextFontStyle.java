@@ -1,6 +1,8 @@
-package com.style.font;
+package com.style.fontx.style;
 
 import android.widget.TextView;
+
+import com.style.fontx.TextFontCompat;
 
 import java.io.File;
 
@@ -20,5 +22,9 @@ public enum TextFontStyle {
     }
     public void applyTypeface(TextView textView){
         TextFontCompat.applyTypeface(textView,this);
+    }
+
+    public String getTextFontPath() {
+        return fontPath;
     }
 }

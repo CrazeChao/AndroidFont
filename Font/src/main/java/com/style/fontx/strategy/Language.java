@@ -1,4 +1,4 @@
-package com.style.font.strategy;
+package com.style.fontx.strategy;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -6,8 +6,9 @@ import java.util.Objects;
  * Created by lizhichao on 2021/9/13
  */
 public enum Language {
-    english(Locale.ENGLISH), french(Locale.FRENCH), german(Locale.GERMAN), italian(Locale.ITALIAN), japanese(Locale.JAPANESE), korean(Locale.KOREA), chinese(Locale.CHINESE)
-    , france(Locale.FRANCE), germany(Locale.GERMANY), italy(Locale.ITALY), japan(Locale.JAPAN), korea(Locale.KOREA);
+    english(Locale.ENGLISH), french(Locale.FRENCH), german(Locale.GERMAN), italian(Locale.ITALIAN), japanese(Locale.JAPANESE),
+    chinese(Locale.CHINESE), france(Locale.FRANCE), germany(Locale.GERMANY), italy(Locale.ITALY), japan(Locale.JAPAN)
+    , korea(Locale.KOREA);
     String language;
     Locale locale;
 

@@ -1,11 +1,10 @@
-package com.style.font.strategy.impl;
-
+package com.style.fontx.strategy.impl;
 import android.widget.TextView;
 
-import com.style.font.TextFontCompat;
-import com.style.font.TextFontStyle;
-import com.style.font.strategy.Language;
-import com.style.font.strategy.TextFontStrategy;
+import com.style.fontx.strategy.Language;
+import com.style.fontx.strategy.TextFontStrategy;
+import com.style.fontx.style.TextFontStyle;
+
 
 /**
  * Created by lizhichao on 2021/9/13
